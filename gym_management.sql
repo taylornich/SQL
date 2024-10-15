@@ -14,12 +14,12 @@ CREATE TABLE WorkoutSessions (
 );
 
 #task 1
-insert into members(id, name, age) VALUES
+INSERT into Members(id, name, age) VALUES
 (1, 'Brianna Padilla', 23),
 (2, 'Jane Doe', 21),
 (3, 'Kenny McDonald', 31);
 
-insert into workoutsessions(session_id, member_id, session_date, session_time, activity) VALUES
+INSERT into workoutsessions(session_id, member_id, session_date, session_time, activity) VALUES
 (101, 1, '2024-09-13', '6 AM', 'Strength Building'),
 (102, 1, '2024-09-14', '7AM', 'Cardio'),
 (103, 2, '2024-09-12', '4 PM', 'Pilates'),
@@ -34,7 +34,7 @@ SET session_time = '2 PM'
 WHERE session_id = 2 and session_time = '5 PM';
 
 #task 3
-DELETE from workoutsessions
+DELETE from WorkoutSessions
 WHERE member_id = 3;
 
-select * from workoutsessions
+select * from WorkoutSessions
